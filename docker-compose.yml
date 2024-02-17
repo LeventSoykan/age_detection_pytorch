@@ -1,0 +1,18 @@
+services:
+    age-app:
+        container_name: age-app
+        image: age-app
+        volumes:
+            - ./html:/var/www/localhost/htdocs
+        ports:
+            - 8021:8021
+
+    age-api:
+        container_name: age-api
+        image: age-api
+        volumes:
+            - ./api:/api
+        ports:
+            - 4000:4000
+
+

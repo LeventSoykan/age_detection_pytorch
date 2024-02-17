@@ -68,7 +68,7 @@ async function sendToAD(files) {
         }
 
         try {
-            const response = await fetch('http://localhost:8000/api/age', {
+            const response = await fetch('http://162.55.182.225:4000/api/age', {
                 method: 'POST',
                 body: formData
             })
